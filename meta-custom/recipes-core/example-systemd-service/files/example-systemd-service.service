@@ -1,0 +1,12 @@
+[Unit]
+Description=Example systemd service unit
+After=local-fs.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c 'echo "Example systemd service ran at $(date)" >/root/example-systemd-service.txt'
+StandardOutput=journal+console
+StandardError=journal+console
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,6 @@
+build/downloads
+build/sstate-cache
+build/tmp
+build/cache
+build/bitbake-cookerdaemon.log
+meta-custom/recipes-connectivity/wifi-config/files/wpa_supplicant-wlan0.conf
