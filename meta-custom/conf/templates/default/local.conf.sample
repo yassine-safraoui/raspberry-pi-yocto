@@ -292,7 +292,7 @@ CMDLINE_ROOT_PARTITION = "/dev/sda2"
 BOOT_MEDIA = "usb"
 WKS_FILE = "ssd-image.wks"
 
-IMAGE_INSTALL:append = " systemd-proof"
+IMAGE_INSTALL:append = " example-systemd-service"
 IMAGE_INSTALL:append = " wifi-config"
 IMAGE_INSTALL:append = " openssh openssh-sftp-server"
 IMAGE_INSTALL:append = " iw wpa-supplicant busybox"
