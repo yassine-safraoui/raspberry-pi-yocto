@@ -1,0 +1,9 @@
+ctrl_interface=/run/wpa_supplicant
+update_config=1
+country=COUNTRY_CODE
+
+network={
+    ssid="SSID_NAME"
+    psk="PASSWORD"
+    scan_ssid=1
+}
