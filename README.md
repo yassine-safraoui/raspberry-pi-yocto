@@ -7,10 +7,17 @@ This project is a Yocto-based build setup for `raspberrypi4-64`. It uses a custo
 Run the following commands from the project root:
 
 ```bash
-source setup-env.sh # Set up the Yocto build environment and exports required environment variables
-repo init --standalone-manifest -u "file://$PWD/manifest.xml" # Initializes the `repo` workspace using the local `manifest.xml`
-repo sync # Syncs all repositories defined in the manifest so your local sources match the manifest configuration
-bitbake core-image-base # Build the core-image-base image for raspberrypi4-64
+# Set up the Yocto build environment and exports required environment variables
+source setup-env.sh
+
+# Initializes the `repo` workspace using the local `manifest.xml`
+repo init --standalone-manifest -u "file://$PWD/manifest.xml"
+
+# Syncs all repositories defined in the manifest so your local sources match the manifest configuration
+repo sync
+
+# Build the core-image-base image for raspberrypi4-64
+bitbake core-image-base
 ```
 
 ## Wi‑Fi configuration
