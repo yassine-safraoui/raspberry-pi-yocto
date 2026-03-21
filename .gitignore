@@ -1,3 +1,5 @@
 build/*
 meta-custom/recipes-connectivity/wifi-config/files/wpa_supplicant-wlan0.conf
 .repo/*
+meta-custom/recipes-connectivity/openssh/files/ssh_host_ed25519_key
+meta-custom/recipes-connectivity/openssh/files/ssh_host_ed25519_key.pub
