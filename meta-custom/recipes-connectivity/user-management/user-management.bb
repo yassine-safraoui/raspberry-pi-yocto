@@ -11,7 +11,7 @@ inherit useradd
 USERADD_PACKAGES = "${PN}"
 # Generated with: openssl passwd -5 'your password here'
 PI_PASSWORD_HASH='\$5\$Ua3PQ2CV.525K0re\$7oDgdGsQY5qQIaXNszkmHK8i9R4AIGB/yQ8rfYzwnQ6'
-USERADD_PARAM:${PN} = "-U -d /home/pi -s /bin/sh -p '$(PI_PASSWORD_HASH)' pi"
+USERADD_PARAM:${PN} = "-U -d /home/pi -s /bin/sh -p '${PI_PASSWORD_HASH}' pi"
 
 do_install() {
     install -d -m 0700 ${D}/home/pi/.ssh
