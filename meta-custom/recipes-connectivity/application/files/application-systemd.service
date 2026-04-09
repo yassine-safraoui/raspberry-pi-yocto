@@ -1,0 +1,12 @@
+[Unit]
+Description=Example systemd service unit
+After=local-fs.target
+
+[Service]
+Type=oneshot
+ExecStart=python3 /usr/bin/application/main.py
+StandardOutput=journal+console
+StandardError=journal+console
+
+[Install]
+WantedBy=multi-user.target

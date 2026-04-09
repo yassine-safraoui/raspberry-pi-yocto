@@ -297,6 +297,10 @@ IMAGE_INSTALL:append = " wifi-config user-management"
 IMAGE_INSTALL:append = " openssh openssh-sftp-server"
 IMAGE_INSTALL:append = " iw wpa-supplicant busybox"
 
+DISTRO_FEATURES:append = " bluetooth"
+IMAGE_INSTALL:append = " python3 python3-pip"
+IMAGE_INSTALL:append = " dbus bluez5 bluez5-testtools python3-bleak"
+
 DISTRO_FEATURES:append = " wifi"
 IMAGE_INSTALL:append = " kernel-module-brcmfmac kernel-module-brcmutil kernel-module-cfg80211 wireless-regdb-static"
 LICENSE_FLAGS_ACCEPTED:append = " synaptics-killswitch"
