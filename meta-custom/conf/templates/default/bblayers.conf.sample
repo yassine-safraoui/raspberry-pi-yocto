@@ -10,6 +10,8 @@ BBLAYERS ?= " \
   /home/yassine/pi-yocto/poky/meta-poky \
   /home/yassine/pi-yocto/poky/meta-yocto-bsp \
   /home/yassine/pi-yocto/meta-raspberrypi \
+  /home/yassine/pi-yocto/meta-openembedded/meta-oe \
+  /home/yassine/pi-yocto/meta-openembedded/meta-python \
   /home/yassine/pi-yocto/build/workspace \
   /home/yassine/pi-yocto/meta-custom \
   "
